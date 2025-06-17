@@ -18,8 +18,6 @@ https://www.kaggle.com/competitions/czii-cryo-et-object-identification
 * **Linux (Ubuntu Desktop 24.04 LTS)**: OS.
 * **VSCode, Jupyter Notebook**: IDE.
 
-By combining these tools and techniques, the project covers a wide range of modern data science skills, from deep learning model development to experiment management, all applied in a complex 3D computer vision context.
-
 ---
 
 ## Project Overview
@@ -46,3 +44,5 @@ These components were combined into one **Composite Loss** function that the mod
   * We leveraged **TorchIO** and MONAI’s transformation APIs to implement these augmentations on-the-fly during training. For example, transforms like RandomFlip, RandomAffine, and RandomNoise were composed to provide a different augmented volume each epoch. The augmentations were crucial given the limited number of unique tomograms – effectively multiplying the training examples and making the model more robust to variations.
 * **Training Procedure and Tuning**: Training 3D models is computationally intensive. We used **mixed precision (AMP)** to speed up training and reduce memory usage. Due to memory limits, we trained on smaller sub-volumes (patches) extracted from the full 3D images. Patches of size 64×128×128 voxels were used, sliding through the volume to cover all regions. The code is optimized to generate these patches and corresponding labels (anchoring any particles falling inside a patch with adjusted coordinates). We also employed **Optuna** for hyperparameter tuning in the U-Net experiments – an automated search to find optimal learning rates, augmentation parameters, and other hyperparams by maximizing validation F-beta score. Experiment tracking was done with **MLflow**, keeping logs of training/validation loss curves and metrics for each run. This helped in comparing the various experiments (YOLO vs U-Net, different augmentation settings, etc.).
 * **Visualization and Debugging Tools**: Throughout development, we used **Napari**, a 3D image viewer, to visually inspect tomogram slices and the model’s predictions. This helped in debugging whether the model’s predicted coordinates aligned with actual particles. We also plotted intermediate outputs and heatmaps to understand how the networks were responding to features in the data.
+
+By combining these tools and techniques, the project covers a wide range of modern data science skills, from deep learning model development to experiment management, all applied in a complex 3D computer vision context.
