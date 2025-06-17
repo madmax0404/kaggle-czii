@@ -6,17 +6,17 @@ https://www.kaggle.com/competitions/czii-cryo-et-object-identification
 
 ## 기술 스택 (Tech Stack)
 
-* Python
-* PyTorch: Base deep learning framework for building and training models.
-* MONAI: Medical imaging toolkit (provided U-Net implementation and many 3D transforms).
-* TorchIO: Toolkit for 3D data augmentation and patch sampling.
-* MedicalNet: Provided a pretrained 3D ResNet backbone for feature extraction.
-* Optuna: Hyperparameter optimization.
-* MLflow: Experiment tracking and logging.
-* Pandas/NumPy/Zarr: Data manipulation and loading (the cryoET data was stored in Zarr format for efficient IO of large 3D arrays).
-* Matplotlib/Seaborn: Used for plotting training curves and any data exploration charts.
-* Linux (Ubuntu Desktop 24.04 LTS): OS.
-* VSCode, Jupyter Notebook: IDE.
+* **Python**
+* **PyTorch**: Base deep learning framework for building and training models.
+* **MONAI**: Medical imaging toolkit (provided U-Net implementation and many 3D transforms).
+* **TorchIO**: Toolkit for 3D data augmentation and patch sampling.
+* **MedicalNet**: Provided a pretrained 3D ResNet backbone for feature extraction.
+* **Optuna**: Hyperparameter optimization.
+* **MLflow**: Experiment tracking and logging.
+* **Pandas/NumPy/Zarr**: Data manipulation and loading (the cryoET data was stored in Zarr format for efficient IO of large 3D arrays).
+* **Matplotlib/Seaborn**: Used for plotting training curves and any data exploration charts.
+* **Linux (Ubuntu Desktop 24.04 LTS)**: OS.
+* **VSCode, Jupyter Notebook**: IDE.
 
 By combining these tools and techniques, the project covers a wide range of modern data science skills, from deep learning model development to experiment management, all applied in a complex 3D computer vision context.
 
