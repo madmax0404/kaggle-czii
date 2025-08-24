@@ -1,0 +1,20 @@
+# Minimal, runnable environment for this repo
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+seaborn>=0.13
+scipy>=1.11
+tqdm>=4.66
+zarr>=2.16
+
+# Deep learning
+torch>=2.2
+monai>=1.4
+torchio>=0.19
+
+# Experiment tracking & tuning (optional but used)
+mlflow>=2.12
+optuna>=3.6
+
+# Visualization / tooling
+napari[all]>=0.5 ; platform_system != "Linux"  # optional GUI-heavy
