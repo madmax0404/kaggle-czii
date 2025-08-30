@@ -1,4 +1,7 @@
-# CZII - CryoET Object Identification (Kaggle 대회)
+# CZII - CryoET Object Identification
+
+Kaggle 대회
+
 https://www.kaggle.com/competitions/czii-cryo-et-object-identification
 
 ---
