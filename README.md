@@ -6,6 +6,16 @@ https://www.kaggle.com/competitions/czii-cryo-et-object-identification
 
 ---
 
+## 프로젝트 개요
+
+이 프로젝트는 **Kaggle CZIi Cryo-ET Object Identification** 대회에 참가하여 진행된 것입니다. 목표는 Cryo-Electron Tomography (Cryo-ET)로 촬영된 3차원 토모그램에서 특정 생물학적 입자를 식별하는 모델을 만드는 것입니다.
+
+Cryo-ET 데이터는 전자현미경 기반의 3D 볼륨 데이터로, **저대비·고노이즈·고차원**이라는 특성을 가지고 있습니다. 이는 기존의 2D 이미지 처리 기법으로는 한계가 있으며, **3차원 기반의 딥러닝 모델**을 적용해야만 유의미한 성능을 낼 수 있었습니다.
+
+본 프로젝트는 단순히 대회 참가를 넘어, **고차원 생물학 데이터를 머신러닝으로 다루는 경험과, 클래스 불균형 및 Recall 중심 평가 환경**에서 성능을 개선하기 위한 다양한 실험을 목표로 하였습니다.
+
+---
+
 ## 기술 스택
 
 * **언어**: Python
@@ -18,16 +28,6 @@ https://www.kaggle.com/competitions/czii-cryo-et-object-identification
 * **시각화**: Napari, Matplotlib, Seaborn
 * **OS**: Ubuntu Desktop 24.04 LTS, Windows 11
 * **IDE**: VSCode, Jupyter Notebook
-
----
-
-## 프로젝트 개요
-
-이 프로젝트는 **Kaggle CZIi Cryo-ET Object Identification** 대회에 참가하여 진행된 것입니다. 목표는 Cryo-Electron Tomography (Cryo-ET)로 촬영된 3차원 토모그램에서 특정 생물학적 입자를 식별하는 모델을 만드는 것입니다.
-
-Cryo-ET 데이터는 전자현미경 기반의 3D 볼륨 데이터로, **저대비·고노이즈·고차원**이라는 특성을 가지고 있습니다. 이는 기존의 2D 이미지 처리 기법으로는 한계가 있으며, **3차원 기반의 딥러닝 모델**을 적용해야만 유의미한 성능을 낼 수 있었습니다.
-
-본 프로젝트는 단순히 대회 참가를 넘어, **고차원 생물학 데이터를 머신러닝으로 다루는 경험과, 클래스 불균형 및 Recall 중심 평가 환경**에서 성능을 개선하기 위한 다양한 실험을 목표로 하였습니다.
 
 ---
 
